@@ -5,6 +5,24 @@
         public int X { get; set; }
         public int Y { get; set; }
         public int Z { get; set; }
+
+        private DateTime hireDate;
+        public DateTime HireDate
+        {
+            get { return hireDate; }
+            set {
+                //if (value < DateTime.Now)
+                //    hireDate = value;
+                //else { throw new Exception("Incorrect HireDate"); }
+            
+
+                hireDate = (value < DateTime.Now) ? value : throw new Exception("Incorrect HireDate"); 
+            }
+        }
+        public override string ToString()
+        {
+            return $"X. {X}. Y. {Y} Z. {Z} . Date : {HireDate.ToShortDateString()}";
+        }
     }
     //Access Spetificators
     /*
@@ -73,9 +91,18 @@
              */
             Point p1;
             _2D_Point p2;
-            p2.Print();
-            int a;
 
+
+            Point[] points = new Point[1];
+            for (int i = 0; i < points.Length; i++)
+            {
+                points[i] = new Point();
+                points[i].X = int.Parse( Console.ReadLine());  
+                points[i].Y = int.Parse( Console.ReadLine());  
+                points[i].Z = int.Parse( Console.ReadLine());  
+                points[i].HireDate = DateTime.Parse( Console.ReadLine());  
+            }
+            Console.WriteLine(points[0]);
 
 
             /*
