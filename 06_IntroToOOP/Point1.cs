@@ -2,7 +2,7 @@
 {
     partial class Point//partial
     {
-
+        //Full property
         private int xCoord;
         public int XCoord//int value;
         {

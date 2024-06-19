@@ -23,8 +23,19 @@ namespace _06_IntroToOOP
            
             try
             {
+
+                //Point[] points = new Point[5];
+                //for (int i = 0; i < points.Length; i++)
+                //{
+                //    points[i] = new Point() { }
+                //}
+                
+
                 Point p = new Point(-4, 8);
+           
                 p.Print();
+                p.Address = "Rivne . Soborna 16";//set
+                Console.WriteLine(  p.Address);//get
                 Console.WriteLine(p);
                 //p.setXCoord(-100);
                 //p.setYCoord(200);

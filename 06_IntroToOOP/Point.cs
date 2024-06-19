@@ -45,15 +45,16 @@ namespace _06_IntroToOOP
         //    xCoord = 0;
         //    yCoord = 0;
         //}
-        public Point(int value) : this(value, value) { }
+        public Point(int value) :this(value, value) { }
         //{
         //    xCoord= value;  
         //    yCoord= value;  
         //}
-        public Point(int xCoord, int y)
+        public Point(int xCoord, int y) 
         {
+            //t$ two four
             //setXCoord(xCoord);
-            XCoord = xCoord;
+            this.XCoord = xCoord;
             // setYCoord(y);
             YCoord = y;
             Type = "2D_Point";
