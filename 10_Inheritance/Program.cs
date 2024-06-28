@@ -28,7 +28,7 @@ namespace _10_Inheritance
         {
             Console.WriteLine($"Name : {name}. Birthday : {birthday.ToShortDateString()}");
         }
-        public abstract void DoWork();//=0
+        public abstract void DoWork(); //=0 - pure virtual function
         public override string ToString()
         {
             return $"Name : {name}. Birthday : {birthday.ToShortDateString()}";
@@ -152,9 +152,7 @@ namespace _10_Inheritance
                 pr.DoWork();
             }
 
-
-
-                Console.WriteLine();
+            Console.WriteLine();
             foreach (var person in people)
             {
                 Console.WriteLine("-------------- Info --------------");
