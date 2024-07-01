@@ -178,7 +178,7 @@ namespace _11_Interfaces
                 }
             }
 
-            var admin = new Administrator();//0hh5f4h6f54h65fh4
+            Administrator admin = new Administrator();//0hh5f4h6f54h65fh4
 
             IManager manager = admin;//0hh5f4h6f54h65fh4
             manager.Control();
