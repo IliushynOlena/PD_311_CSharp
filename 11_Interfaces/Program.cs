@@ -17,6 +17,7 @@ namespace _11_Interfaces
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime Birthday{ get; set; }
+        public static void Test() { Console.WriteLine("Hello abstract class"); }
 
         public override string ToString()
         {
@@ -116,6 +117,9 @@ namespace _11_Interfaces
     {
         static void Main(string[] args)
         {
+            FileInfo file = new FileInfo("test.txt");
+           
+            File.Create(File.ReadAllText(file.FullName));   
 
             //Director director = new Director()
             IManager director = new Director()
