@@ -48,7 +48,19 @@
     {
         static void Main(string[] args)
         {
-            
+            string res = "aabaa";
+            Console.WriteLine(res);
+            var a = res.ToArray();
+            var b = res.Reverse().ToArray();
+            if (a.SequenceEqual(b))
+            {
+                Console.WriteLine("true");
+            }
+            else
+            {
+                Console.WriteLine("false");
+            }
+
             List<Student> students = new List<Student>
             {
                 new Student
