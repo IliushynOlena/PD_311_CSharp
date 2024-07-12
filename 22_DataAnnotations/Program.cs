@@ -12,7 +12,8 @@ namespace _22_DataAnnotations
         [Required(ErrorMessage = "Age not setted")]
         [Range(1, 120, ErrorMessage = "Age is not valid ")]
         public int Age { get; set; }
-        [Phone]//+38(097)25-69-112   +380974569852 +38097-12-45-33
+        [RegularExpression(@"\+38\(0\d{2}\)\d{3}-\d{2}-\d{2}")]
+        //[Phone]//+38(097)25-69-112   +380974569852 +38097-12-45-33
         public string? Phone { get; set; }
         [EmailAddress]
         public string? Email { get; set; }
@@ -21,6 +22,7 @@ namespace _22_DataAnnotations
         [Required]
         public string? Password { get; set; }
         [Required]
+        
         [Compare(nameof(Password), ErrorMessage ="Not confirm password")]
         public string? ConfirmPassword { get; set; }
     }
